@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Process the form data
 
     $type = isset($_POST['type']) ? $_POST['type'] : '';
     $amount = isset($_POST['amount']) ? $_POST['amount'] : '';

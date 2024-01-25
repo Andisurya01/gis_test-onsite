@@ -75,10 +75,9 @@ if ($fileOpen) {
                 echo '<th>Amount</th>';
                 echo '<th>Date</th>';
                 echo '</tr>';
-
                 while (($row = fgetcsv($fileRead)) !== false) {
                     if (is_array($row)) {
-                        echo '<tr class="py-2 px-3>';
+                        echo '<tr>';
 
                         foreach ($row as $index => $cell) {
                             if ($index === 1) {
